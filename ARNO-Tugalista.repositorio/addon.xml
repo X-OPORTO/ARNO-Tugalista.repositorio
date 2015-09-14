@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="ARNO-Tugalista.repositorio" name="ARNO-Tugalista repositorio" version="0.0.1" provider-name="ARNO-Tugalista">
+	<extension point="xbmc.addon.repository" name="X-OPORTO Add-on Repository">
+		<info compressed="false">http://raw.github.com/X-OPORTO/ARNO-Tugalista.repositorio/master/addons.xml</info>
+		<checksum>http://raw.github.com/X-OPORTO/ARNO-Tugalista.repositorio/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/X-OPORTO/ARNO-Tugalista.repositorio/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>ARNO-Tugalista Addon</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
