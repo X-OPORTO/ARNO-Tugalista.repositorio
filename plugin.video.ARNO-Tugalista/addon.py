@@ -33,7 +33,7 @@ fanart = os.path.join(addonfolder,'fanart.png')
 
 def CATEGORIES():
 	addDir('Desporto','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'1.png'))
-	addDir('Generalistas','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'2.png'))
+	addDir('Generalistas','https://pastebin.com/raw.php?i=DEZ8Hxxb',2,os.path.join(artfolder,'2.png'))
 	addDir('Notícias','https://pastebin.com/raw.php?i=DEZ8Hxxb',2,os.path.join(artfolder,'3.png'))
 	addDir('Filmes','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'4.png'))
 	addDir('Musica','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'5.png'))
