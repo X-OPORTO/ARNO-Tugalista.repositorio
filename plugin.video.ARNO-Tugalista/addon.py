@@ -32,15 +32,15 @@ fanart = os.path.join(addonfolder,'fanart.png')
 #MENUS############################################
 
 def CATEGORIES():
-	addDir('Desporto','http://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'1.png'))
-	addDir('Generalistas','http://pastebin.com/raw.php?i=DEZ8Hxxb',2,os.path.join(artfolder,'2.png'))
-	addDir('Notícias','https://',2,os.path.join(artfolder,'3.png'))
-	addDir('Filmes','https://',2,os.path.join(artfolder,'4.png'))
-	addDir('Musica','https://',2,os.path.join(artfolder,'5.png'))
-	addDir('Infantil','https://',2,os.path.join(artfolder,'7.png'))
-	addDir('xxx','https://',2,os.path.join(artfolder,'6.png'))
-	addDir('Eventos','https://',2,os.path.join(artfolder,'8.png'))
-	addDir('Ace','https://',2,os.path.join(artfolder,'9.png'))
+	addDir('Desporto','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'1.png'))
+	addDir('Generalistas','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'2.png'))
+	addDir('Notícias','https://pastebin.com/raw.php?i=DEZ8Hxxb',2,os.path.join(artfolder,'3.png'))
+	addDir('Filmes','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'4.png'))
+	addDir('Musica','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'5.png'))
+	addDir('Infantil','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'7.png'))
+	addDir('xxx','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'6.png'))
+	addDir('Eventos','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'8.png'))
+	addDir('Ace','https://pastebin.com/raw.php?i=Dw6B3UW6',2,os.path.join(artfolder,'9.png'))
 	xbmcplugin.setContent(int(sys.argv[1]), 'movies')
 	if "confluence" in xbmc.getSkinDir(): xbmc.executebuiltin('Container.SetViewMode(500)')
 
@@ -95,11 +95,11 @@ def makeRequest(url, headers=None):
             print 'URL: '+url
             if hasattr(e, 'code'):
                 print 'We failed with error code - %s.' % e.code
-                xbmc.executebuiltin("XBMC.Notification(freetuga,We failed with error code - "+str(e.code)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(ARNO-Tugalista,We failed with error code - "+str(e.code)+",10000,"+icon+")")
             elif hasattr(e, 'reason'):
                 addon_log('We failed to reach a server.')
                 addon_log('Reason: %s' %e.reason)
-                xbmc.executebuiltin("XBMC.Notification(freetuga,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
+                xbmc.executebuiltin("XBMC.Notification(ARNO-Tugalista,We failed to reach a server. - "+str(e.reason)+",10000,"+icon+")")
 
 def getSoup(url):
         data = makeRequest(url)
